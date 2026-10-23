@@ -1,4 +1,4 @@
-
+/*
 const stu =["Priya", "Arun", "Divya", "Rahul", "Sneha"];
 console.log(stu[0] + stu[4]);
 stu.push("Karthik");
@@ -86,3 +86,63 @@ function Account(){
 const myAccount = Account();
 myAccount(500);
 myAccount(700);
+
+const myPro = new Promise((resolve, reject) => {
+    let pay = true;
+    if(pay){
+        resolve("Payment Successful");
+    }
+    else{  
+        reject("Payment Failed");
+    }
+});
+myPro.then((result) => 
+    console.log(result))
+.catch((error) =>
+    console.log(error))
+.finally(() => console.log("Payment Process Completed"));
+
+function getData(){
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Data Received");
+        }, 2000);
+    });
+}
+async function displayData(){
+    console.log("Start");
+    const resu = await getData();
+    console.log(resu);
+    console.log("End");
+}
+displayData();
+
+function sayHello(){
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve("Hello");
+        }, 1000);
+    });
+}
+
+async function greet(){
+    console.log("Before");
+    const msg = await sayHello();
+    console.log(msg);
+    console.log("After");
+}
+greet();
+console.log("Outside");
+
+
+console.log("one");
+setTimeout(()=> console.log("Two"),0);
+console.log("three");
+
+setTimeout(()=> console.log("Confirm"),3000);
+console.log("Registration received");*/
+
+console.log("Start");
+setTimeout(() => console.log("Timer"),0);
+Promise.resolve().then(() => console.log("Promise"));
+console.log("Finish")
