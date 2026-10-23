@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="S.A. Engineering College website">
+    <title>S.A. Engineering College</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 20px;
+        }
+        header {
+            font-size: 24px;
+            color: #2c3e50;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        h1, h2, h3 {
+            color: #34495e;
+        }
+        a {
+            color: #2980b9;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+        img {
+            border: 3px solid #3b6084;
+            border-radius: 8px;
+        }
+        ul li {
+            color: #16a085;
+            font-weight: bold;
+        }
+        ol li {
+            color: #8e44ad;
+        }
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin: 20px auto;
+        }
+        table, th, td {
+            border: 1px solid #2c3e50;
+            padding: 8px;
+            text-align: center;
+        }
+        caption {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        form {
+            margin-top: 20px;
+            padding: 15px;
+            background: #ecf0f1;
+            border-radius: 8px;
+        }
+        label {
+            font-weight: bold;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
+    <header>S.A. Engineering College</header>
+    <main>Welcome</main>
+    <h1 style="color:darkblue;"> JOSLIN V</h1> <!-- Inline CSS -->
+    <h2 style="color:rgb(68, 5, 47);">2327025</h2> <!-- Inline CSS -->
+    <h3 style="color:purple;">Computer Science and Engineering (AI & ML)</h3> <!-- Inline CSS -->
+    <a href ="https://www.saec.ac.in/">Visit S.A. Engineering College website</a>
+    <a href="task2.html">Task 2</a>
+    <br>
+    <img src="https://img.studyclap.com/img/institute/college/original/2788/saec-chennai-entrance-38249e.jpg" 
+        alt="SAEC" width="500" height="500" style="box-shadow:5px 5px 10px gray;"> <!-- Inline CSS -->
+    
+    <ul>
+        <li> CSE </li>
+        <li> ECE </li>
+    </ul>
+    <ol start="I">
+        <li> EEE </li>
+        <li> IT </li>
+        <li> AIML </li>
+    </ol>
+    
+    <table>
+        <caption>Semester 1</caption>
+        <thead>
+            <tr>
+                <th scope = "col">ID</th>
+                <th scope = "col">Name</th>
+                <th scope = "col">Subject</th>
+                <th scope = "col">Mark</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr > 
+                <td>2327025</td>
+                <td>JOSLIN V</td>
+                <td>Mathematics</td>
+                <td>95</td>
+            </tr>
+            <tr>
+                <td>2327025</td>
+                <td>JOSLIN V</td>
+                <td>Physics</td>
+                <td>90</td>
+            </tr>
+            <tr>
+                <td>2327025</td>
+                <td>JOSLIN V</td>
+                <td>Chemistry</td>
+                <td>85</td>
+            </tr>
+            <tr>
+                <td>2327025</td>
+                <td>JOSLIN V</td>
+                <td>Programming</td>
+                <td>89</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <form action ="/register" method="post">
+        <label for="name">Full Name:</label>
+        <input id="name" name="name" required style="margin:5px;"> <!-- Inline CSS -->
+        <br> 
+        <label for="id">ID:</label>
+        <input id="id" name="id" required style="margin:5px;"> <!-- Inline CSS -->
+        <br>
+        <label for="age">Age:</label>
+        <input id="age" name="age" type="number" required style="margin:5px;"> <!-- Inline CSS -->
+        <br>
+        <label for="dob">Date of Birth:</label>
+        <input id="dob" name="dob" type="date" required style="margin:5px;"> <!-- Inline CSS -->
+        <br>
+        <label for="course">Course</label>
+        <select id = "course" name="course" style="margin:5px;"> <!-- Inline CSS -->
+            <option value="AIML">AIML</option>
+            <option value="CSE">CSE</option>
+            <option value="EEE">EEE</option>
+            <option value="IT">IT</option>
+        </select>   
+        <input type = "checkbox" id="Female" name="gender" value="Female">
+        <label for="Female">Female</label>
+        <button type="submit" style="background-color:gray; color:white;">Submit</button> <!-- Inline CSS -->
+    </form>
+    
+    <footer>Copyright 2026</footer>
+</body>
+</html>
