@@ -1,0 +1,77 @@
+/* General page styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 20px;
+    color: #333;
+}
+
+/* Form container */
+main {
+    max-width: 500px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Inputs, selects, textarea */
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Interactive states */
+input:focus, select:focus, textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52,152,219,0.5);
+}
+
+button {
+    padding: 10px 15px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Submit button */
+button[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+}
+
+/* Reset button */
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: white;
+}
+
+/* Hover effect */
+button:hover {
+    opacity: 0.85;
+}
+
+/* Disabled button */
+button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+}
+
+/* First input field styling */
+input:first-child {
+    border: 2px solid #9b59b6;
+}

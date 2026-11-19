@@ -1,0 +1,347 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f8f9fa;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#222;
+    padding:15px 0;
+    position:sticky;
+    top:0;
+    z-index:100;
+}
+
+nav ul{
+    display:flex;
+    justify-content:center;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#ff9800;
+}
+
+.active{
+    color:#ff9800 !important;
+    border-bottom:2px solid #ff9800;
+    padding-bottom:5px;
+}
+
+.banner{
+    position:relative;
+    text-align:center;
+}
+
+.banner img{
+    width:100%;
+    height:500px;
+    object-fit:cover;
+}
+
+.banner-content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    background:rgba(0,0,0,0.5);
+    padding:30px;
+    border-radius:10px;
+}
+
+.banner-content h1{
+    font-size:40px;
+    margin-bottom:15px;
+}
+
+.banner-content p{
+    margin-bottom:20px;
+}
+
+.banner-content button{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+    border-radius:5px;
+    font-size:16px;
+}
+
+.banner-content button:hover{
+    background:#e68900;
+}
+
+.cards{
+    width:90%;
+    margin:50px auto;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.cards h1,
+.cards h2{
+    width:100%;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.card{
+    width:280px;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    text-align:center;
+    text-decoration:none;
+    color:#333;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+.card p{
+    padding:8px 15px;
+}
+
+.home-about,
+.about-section{
+    width:90%;
+    max-width:1000px;
+    margin:50px auto;
+    text-align:center;
+}
+
+.home-about h2,
+.about-section h1,
+.about-section h2{
+    margin-bottom:20px;
+}
+
+.home-about p,
+.about-section p{
+    line-height:1.8;
+}
+
+.event-details{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+}
+
+.event-details h1{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.event-details img{
+    width:100%;
+    max-width:800px;
+    height:450px;
+    object-fit:cover;
+    display:block;
+    margin:20px auto;
+    border-radius:10px;
+}
+
+.event-info{
+    max-width:850px;
+    margin:auto;
+}
+
+.event-info h3{
+    margin:20px 0 10px;
+}
+
+.event-info p{
+    margin-bottom:15px;
+}
+
+.event-info button{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    border-radius:5px;
+    cursor:pointer;
+    margin-right:10px;
+    margin-top:10px;
+}
+
+.event-info button:hover{
+    background:#e68900;
+}
+
+.schedule-section{
+    width:95%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.schedule-section h1{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    background:white;
+}
+
+table th{
+    background:#222;
+    color:white;
+    padding:15px;
+}
+
+table td{
+    text-align:center;
+    padding:15px;
+    border:1px solid #ddd;
+}
+
+table tr:nth-child(even){
+    background:#f4f4f4;
+}
+
+table a{
+    color:#ff9800;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+table a:hover{
+    text-decoration:underline;
+}
+
+.register-section{
+    width:90%;
+    max-width:600px;
+    margin:50px auto;
+}
+
+.register-section h1{
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.register-section p{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+#registerForm{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#registerForm input,
+#registerForm select,
+#registerForm textarea{
+    padding:12px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+}
+
+#registerForm button{
+    background:#ff9800;
+    color:white;
+    border:none;
+    padding:12px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+#registerForm button:hover{
+    background:#e68900;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:25px 10px;
+    margin-top:50px;
+}
+
+.social{
+    margin-top:15px;
+}
+
+.social a{
+    margin:0 10px;
+}
+
+.social img{
+    width:30px;
+    height:30px;
+    border-radius:50%;
+}
+
+@media(max-width:768px){
+
+    nav ul{
+        flex-wrap:wrap;
+        gap:15px;
+    }
+
+    .banner img{
+        height:300px;
+    }
+
+    .banner-content{
+        width:90%;
+    }
+
+    .banner-content h1{
+        font-size:28px;
+    }
+
+    .card{
+        width:100%;
+        max-width:320px;
+    }
+
+    .event-details img{
+        height:250px;
+    }
+
+    table{
+        font-size:14px;
+        overflow-x:auto;
+    }
+}

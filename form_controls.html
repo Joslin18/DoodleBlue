@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+        <title>HTML Form Controls</title>
+        <link rel ="stylesheet" href = "styles.css">
+    </head>
+    <body>
+        <main>
+            <form action="/preferences" method ="post">
+                <label for="fullName">Full Name:</label>
+                <input id="fullName" name="fullName" minlength="2" maxlength="60" required>
+                <br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" minlength="8" required>
+                <br>
+
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" name="phone" pattern="[0-9]{10}" title="Enter a 10-digit phone number">
+                <br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+                <br>
+                
+                <select id="course" name="course" required>
+                    <option value ="">Choose a course</option>
+                    <option value ="html">HTML &amp; CSS</option>
+                    <option value ="js">JavaScript</option>
+                    <option value="frontend"> Frontend Development</option>
+                </select>
+                <br>
+
+                <label for="bio">About You</label>
+                <textarea id="bio" name="bio" rows="4" maxlength="300" placeholder="Tell us about yourself..."></textarea>
+                <br>
+
+                <label for="resume">Resume(PDF)</label>
+                <input type="file" id="resume" name="resume" accept=".pdf,application/pdf">
+                <br>
+
+                <fieldset>
+                    <legend> Terms and Conditions </legend>
+
+                    <label for="terms">
+                        <input type="checkbox" id="terms" name="terms" value="accepted" required>
+                        I agree to the terms and conditions
+                    </label>
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Select Your Skills</legend>
+
+                    <label for="skill-html">
+                        <input type="checkbox" id="skill-html" name="skills" value="html">
+                        HTML
+                    </label>
+
+                    <label for="skill-css">
+                        <input type="checkbox" id="skill-css" name="skills" value="css">
+                        CSS
+                    </label>
+                    
+                    <label for="skill-js">
+                        <input type="checkbox" id="skill-js" name="skills" value="js">
+                        JavaScript  
+                    </label>
+
+                </fieldset>
+                <br>
+
+                <fieldset>
+                    <legend>Experience Level</legend>
+                    
+                    <label for ="level-beginner">
+                        <input type="radio" id="level-beginner" name="level" value="beginner" required>
+                        Beginner
+                    </label>
+
+                    <label for ="level-intermediate">
+                        <input type="radio" id="level-intermediate" name="level" value="intermediate">
+                        Intermediate
+                    </label>
+
+                    <label for="level-advanced">
+                        <input type="radio" id="level-advanced" name="level" value="advanced">
+                        Advanced
+                    </label>
+                </fieldset>
+                <br>
+
+                <button type="submit">Create Account</button>
+
+                <button type="reset">Clear Form</button>
+            </form>
+        </main>
+    </body>
+</html>
