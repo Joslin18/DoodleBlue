@@ -23,11 +23,7 @@ DoodleBlue/
 │   │   └── main.jsx            # React DOM entry point
 │   ├── db.json                 # Mock REST API database (JSON Server)
 │   ├── package.json            # Project dependencies and scripts
-│   └── vite.config.js          # Vite bundler configuration
-├── form_controls.html          # HTML5 Form Controls & Input Validation task
-├── styles.css                  # Shared stylesheet for HTML tasks
-├── task1.html                  # [Add short title, e.g., Responsive Landing Page / Grid Layout]
-└── task2.html                  # [Add short title, e.g., Interactive Table / Dashboard UI]
+│___└── vite.config.js          # Vite bundler configuration
 
 ```
 
